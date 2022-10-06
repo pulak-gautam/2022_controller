@@ -1,9 +1,3 @@
-# 2022_controller
-Implemented a Basic controller for maintaining a target voltage in circuit with exponential decay
-=======
-# Creating Controllers
-
-
 ## Approach to Control Design
 
 In any system/plant, to maintain a certain target reference level we need a controller to feed necessary input into the actuator. Controllers work on a feedback loop which measures the deviation of true output with the expected output, and tries to maintain true output level close to the reference output level. The most common type of controller is the PID (Proportional-Derivative_Integral) controller.
@@ -19,11 +13,7 @@ Make seperate folders for each problem statements, each folder name must match w
 
 ---
 
-## Problem Statements
-
-### Capacitor Voltage Control
-
- **Monkesh**.
+## Problem Statement
 
 ### Simplified Inverted Pendulum Control
 
@@ -52,7 +42,3 @@ We have implemented the mathematical model in Simulink using a PID Controller.
 
 
 **Pulak & Aditya**.
-
-### UAV Elevation Control
-
-**Shivam**
