@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/pulak/catkin_ws/devel/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/pulak/catkin_ws/src/husky_pos_vel/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/mav_comm/mav_msgs/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/mav_comm/mav_planning_msgs/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/rotors_simulator/rotors_control/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/rotors_simulator/rotors_gazebo_plugins/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/rotors_simulator/rotors_hil_interface/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/rotors_simulator/rotors_joy_interface/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/talkerlistener/include/**",
+        "/home/pulak/Classroom/ARIITK-Y21Induction/catkin_ws/src/turtle_pong/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}
