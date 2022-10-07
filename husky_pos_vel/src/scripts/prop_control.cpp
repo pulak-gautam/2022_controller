@@ -18,8 +18,8 @@ float K2 = 0.5;
 float ref_X;
 float ref_Y;
 
-float curr_X = -1;
-float curr_Y = -1;
+float curr_X = 0;
+float curr_Y = 0;
 
 float vel_X;
 float vel_Y;
@@ -92,7 +92,7 @@ int main(int argc, char **argv){
 
     geometry_msgs::Twist msg;
 
-    while(ros::ok() && d >= distance_tolerance){
+    while(ros::ok()){
 
         d = sqrt(pow(curr_X - ref_X, 2) + pow(curr_Y - ref_Y, 2));
 
