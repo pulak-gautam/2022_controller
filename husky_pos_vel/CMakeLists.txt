@@ -127,7 +127,7 @@ catkin_package(
 ## Specify additional locations of header files
 ## Your package locations should be listed before other locations
 include_directories(
-include
+  include
   ${catkin_INCLUDE_DIRS}
   # ${EIGEN3_INCLUDE_DIR}
 )
@@ -147,8 +147,8 @@ include
 ## Declare a C++ executable
 ## With catkin_make all packages are built within a single CMake context
 ## The recommended prefix ensures that target names across packages don't collide
-add_executable(prop_control src/scripts/prop_control.cpp)
-add_executable(pub src/scripts/pub.cpp)
+add_executable(controller_node src/controller_node.cpp src/controller.cpp)
+add_executable(publisher_node src/publisher_node.cpp src/publisher.cpp)
 
 ## Rename C++ executable without prefix
 ## The above recommended prefix causes long target names, the following renames the
@@ -162,16 +162,26 @@ add_executable(pub src/scripts/pub.cpp)
 
 ## Specify libraries to link a library or executable target against
 target_link_libraries(
-  prop_control 
+  controller_node 
   # PUBLIC
         ${catkin_LIBRARIES}
   #       Eigen3
   )
 
 target_link_libraries(
-  pub
+  publisher_node
   # PUBLIC
         ${catkin_LIBRARIES}
   #       Eigen3
   )
+
+add_dependencies(controller_node
+  ${catkin_EXPORTED_TARGETS}
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+)
+
+add_dependencies(publisher_node
+  ${catkin_EXPORTED_TARGETS}
+  ${${PROJECT_NAME}_EXPORTED_TARGETS}
+)
 
