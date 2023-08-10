@@ -21,7 +21,7 @@ In an Inverted Pendulum, the goal is to maintain the pendulum at a certain posit
 
     where k is a constant depending on the mass, length and torque constant of the motor
 
-Following are graphs of simulation results from Simulink:
+Following are graphs of simulation results from *Simulink*:
 
 
 <img src="./PID_example.jpg" alt="Simulink Diagram" style="height: 350px; width:350px;"/>
