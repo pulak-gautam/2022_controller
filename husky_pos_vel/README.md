@@ -1,8 +1,3 @@
-This repository contains two components <br>
-1. A sample code simulatiing an ideal inverted pendulum. The code also generates the control output using feedback loop.
-This was done to get an overview idea of controllers.
-2. Full-fledged position controller ROS package which moves the ``husky`` (four-wheeled ground model) to a desired position.
-
 ## Position Controller for Husky
 Designed and implemented a position controller for husky assuming no natural interference, and an empty world.
 
